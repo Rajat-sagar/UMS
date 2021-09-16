@@ -1,0 +1,101 @@
+﻿
+@{
+    
+    if (Session["userID"] == null)          // if user is not logged in ....blocking unauthorized request
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+<style>
+.dashboard {
+        margin: 0;
+        position: absolute;
+        top: 25%;
+        left:24%;
+
+}
+.dashboard2 {
+        margin: 0;
+        position: absolute;
+        top: 25%;
+        left: 52%;
+}
+
+.color-box {
+        height:500px;
+        width: 900px;
+        margin-top: 55px;
+        margin-left: 95px;
+        background-color: #e8e1e1;
+        border: 1px solid #000000;
+        border-radius: 60px;
+}
+
+.btn-student {
+        margin: 30px;
+        background-color: #2086b3;
+        border: none;
+        color: #ffffff;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 12px;
+        transition-duration: 0.4s;
+}
+
+.btn-student:hover{
+    background-color:#082641;
+}
+
+.std-logo{
+    margin-top:50px;
+}
+
+h1{
+    text-align: center;
+    left: 40%;
+  }
+
+
+</style>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1><b>Home</b></h1>
+    <div class="color-box">
+        <div class="dashboard">
+            <div class="std-logo">
+                <img src="~/Images/circle-cropped.png" width="150" />
+                <button class="btn-student" onclick="location.href = '@Url.Action( "Index", "Student")'">Student</button>
+            </div>
+            <div class="std-logo">
+
+                <img src="~/Images/logoFac.png" width="150" />
+                <button class="btn-student" onclick="location.href = '@Url.Action( "Index", "Faculty")'">Faculty</button>
+            </div>
+        </div>
+        <div class="dashboard2">
+
+
+            <div class="std-logo">
+                <img src="~/Images/acclogo-crp.jpg" width="120" />
+                <button class="btn-student" onclick="location.href = '@Url.Action( "Index", "Accounts")'">Accounts</button>
+            </div>
+            <div class="std-logo">
+                <img src="~/Images/Hostellogo.png" width="150" />
+                <button class="btn-student" onclick="location.href = '@Url.Action( "Index", "Hostels")'">Hostel</button>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+</html>

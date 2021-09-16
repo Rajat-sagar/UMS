@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7cccaa6f6f39477da6704c847cfd3d27" Name="Diagram1" DisplayType="true" ZoomLevel="131">
+        <EntityTypeShape EntityType="Model.Account" Width="1.5" PointX="10.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Admin" Width="1.5" PointX="2.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Branch" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Course" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Faculty" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Hostel" Width="1.5" PointX="5.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Student" Width="1.5" PointX="8" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Subject" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagram" Width="1.5" PointX="5.5" PointY="6.25" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Accounts_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Branch_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Subjects_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Subjects_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Students_Hostels" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
